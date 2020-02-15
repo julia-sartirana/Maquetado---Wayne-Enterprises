@@ -1,0 +1,26 @@
+.nav-items {
+  @include flex();
+  padding: 0;
+
+  a {
+    text-decoration: none;      
+
+    li {
+      list-style: none;
+      font-family: $font-main;
+      font-size: $font-size-s;
+      font-weight: bold;
+      color: $secundary-color;
+      letter-spacing: 0.05em;
+      margin: 0px 20px;   
+      transition: 0.3s;
+      
+      &:hover {
+        color: $tertiary-color;
+        transition: 0.3s;
+      }     
+    }      
+  }
+}
+
+

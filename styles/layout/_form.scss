@@ -1,0 +1,36 @@
+#contact {
+
+  form {
+    text-align: center;
+
+    .form-container {
+      @include flex();
+      flex-wrap: wrap;
+
+      input {
+        @include font(13px, normal, $font-main);
+        line-height: 30px;
+        margin: 8px 15px;
+        padding-left: 10px;
+      }      
+
+      .input-name {        
+        flex: 1 0 300px;
+      }
+
+      .input-email {        
+        flex: 1 0 300px;
+      }
+      
+      .input-subject, .input-msg {        
+        flex: 2 0 640px;             
+      }
+
+      .input-msg {
+        @include font(13px, normal, $font-main);
+        margin: 8px 15px;
+        padding-left: 10px;
+      }
+    }
+  }
+}

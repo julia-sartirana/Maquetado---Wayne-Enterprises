@@ -1,0 +1,91 @@
+.btn-nav-mobile {
+  display: none;
+}
+
+.btn-intro-container {
+  @include flex();
+  width: 455px;
+
+  a {
+    @include font ($font-size-s, 700, $font-secundary, $bg-main);
+    @include button(none, 20px);
+    width: 170px;
+    line-height: 40px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    text-decoration: none;
+
+    &:nth-child(1) {
+      @include button(2px solid $tertiary-color, 20px, $tertiary-color);
+
+      &:hover {
+        @include button(2px solid $bg-main, 20px, $main-color);        
+      }     
+    }
+
+    &:nth-child(2) {
+      @include button(2px solid $bg-main, 20px, );
+      margin-left: 30px;
+
+      &:hover {
+        @include button(2px solid $tertiary-color, 20px, $tertiary-color);        
+      }
+    }    
+  }  
+}
+
+#portfolio {
+  
+  .btns-portfolio {
+    @include flex();
+    margin: 20px 0px;
+
+    button {
+      @include button(none, 20px, $bg-secundary); 
+      @include font($font-size-xs, normal, $font-main, $tertiary-color);
+      padding: 8px 20px;
+      margin: 15px;  
+      transition: 0.3s;
+      
+      &:hover {
+        cursor: pointer;
+        background-color: $tertiary-color;
+        color: $bg-secundary;
+        transition: 0.3s;
+      }
+    }      
+  }
+}
+
+#testimonials {
+
+  .btn-carousel {
+    @include flex (center);
+    margin-bottom: 50px;
+
+    button {
+      @include button(none, 50%, #DDD); 
+      width: 15px;
+      height: 15px;
+      margin: 5px;      
+    }
+  }
+}
+
+#contact {
+
+  button {
+    @include font($font-size-m, normal, $font-main, $bg-main);
+    @include button(none, 30px, $tertiary-color);
+    width: 150px;
+    height: 40px;    
+    margin: 10px 0px;
+    transition: 0.3s;
+
+    &:hover {
+      cursor: pointer;
+      background-color: #0961BB;
+      transition: 0.3s;
+    }
+  }
+}

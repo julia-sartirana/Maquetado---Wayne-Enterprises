@@ -1,0 +1,27 @@
+#testimonials {
+
+  .carousel-wrapper {
+    @include flex(center, column, center);
+
+    .testimonial-container {
+      @include flex(center, row, center);
+      width: 90%;
+      letter-spacing: 0.01em;      
+      line-height: 25px;
+
+      h4 {
+        @include font(18px, 700, $font-secundary, #111);
+        margin: 0;
+      }
+
+      span {
+        @include font($font-size-s, normal, $font-secundary, $text-light-color);
+      }
+
+      p {
+        @include font($font-size-m, normal, $font-main, $text-color);
+        font-style: italic;
+      }     
+    }    
+  }
+}

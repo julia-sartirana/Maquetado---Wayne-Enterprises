@@ -1,0 +1,81 @@
+// ------------------------------------ INTRO -------------------------------------
+#intro {
+  @include flex();
+  background-color: $main-color;
+  height: 650px;
+  padding-top: 20px;  
+
+  .img-intro-container, .intro-container{ 
+    width: 50%;
+    margin: auto;
+  }
+
+  .intro-container {
+    @include flex (center, column, center);    
+  }  
+}
+
+// --------------------------------------ABOUT ----------------------------------
+#about {
+    
+  .section-about {
+    @include flex(flex-start);
+    width: 85%;
+    margin-top: 20px;
+    padding: 10px;
+
+    .description-about, .img-about-container {
+      width: 50%;
+    }
+  }
+}
+// ------------------------------------- SERVICES -------------------------------
+#services {    
+  background-color: $bg-secundary;
+
+  .card-service-wrapper {
+    @include flex(center, row, center);    
+  }
+
+  .card-service-container {
+    @include flex(center, row, center);
+    flex-wrap: wrap;
+    width: 85%;
+    padding: 35px 0px;
+  }
+}
+// ------------------------------------ WHY US -------------------------------------
+#why-us {
+  background-color: #004a99;  
+  color: $bg-main;
+  
+  .title-section-container {  
+    h3, p {
+      color: $bg-main;
+    }
+  } 
+
+  .card-why-us-wrapper {
+    @include flex(center, row, center);
+    margin-top: 50px;
+  }
+}
+// ------------------------------------ TESTIMONIALS -------------------------------------
+#testimonials {    
+  @include flex(space-between, column, center); 
+  background-color: $bg-secundary;
+  height: 100%;
+}
+// ------------------------------------ CONTACT -------------------------------------
+#contact {
+  .form-contact-wrapper {
+    @include flex(); 
+    margin: 30px 15px;    
+    width: 100%;
+    box-sizing: border-box;    
+
+    .map-contact-container {
+      width: 60%;
+    }
+  }
+}

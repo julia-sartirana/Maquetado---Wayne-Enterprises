@@ -1,0 +1,19 @@
+@mixin flex ($justify: null, $direction: null, $align: null) {
+  display: flex;
+  justify-content: $justify;
+  flex-direction: $direction;
+  align-items: $align;
+}
+
+@mixin font ($size: null, $weight: null, $family: null, $color: null) {
+  font-size: $size;
+  font-weight: $weight;
+  font-family: $family;
+  color: $color;
+}
+
+@mixin button($border: null, $borderRadius: null, $bgColor: null) {  
+  border: $border;
+  border-radius: $borderRadius;
+  background-color: $bgColor;
+}

@@ -1,0 +1,17 @@
+.counters-wrapper {
+  @include flex(space-around);
+  width: 85%;
+
+  .counter {
+    margin: 30px;
+    text-align: center;
+    
+    span {
+      @include font(44px, 600, $font-secundary);      
+    }    
+
+    p {
+      @include font($font-size-s, normal, #D8EAFE);
+    }
+  }
+}

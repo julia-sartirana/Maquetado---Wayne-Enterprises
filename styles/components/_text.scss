@@ -1,0 +1,67 @@
+.section {
+
+  .title-section-container {
+    @include flex(center, column, center);
+    text-align: center;
+    width: 60%;
+    
+    h3 {
+      @include font($font-size-xl, 500, $font-secundary, $title-bold-color);
+      margin: 50px 0px 15px 0px;
+    }
+  
+    p {
+      @include font($font-size-s, normal, $font-main, $text-light-color);
+      width: 65%;
+      line-height: 23px;
+      margin: 0;
+    }
+  } 
+}
+
+#intro {
+  h2 {
+    @include font(48px, bold, $font-secundary, $bg-main);    
+    margin: 0;
+    height: 243px;
+
+    span {
+      text-decoration: underline;
+      color: #74B5FC;
+    }
+  }
+}
+
+#about {
+
+  .section-about {
+    p {
+      @include font($font-size-m, normal, $font-main, $text-color);
+      line-height: 26px;
+    }
+  } 
+
+  .description-about {
+    h4 {
+      @include font($font-size-l, bold, $font-secundary, $title-bold-color);
+      line-height: 30px;
+    }
+  }
+}
+
+#contact {
+
+  .info-contact-container {
+    @include flex(space-between);
+    margin: 0px 15px;    
+
+    .info-contact {
+      @include flex(center, row, center);      
+    }
+  }
+}
+
+
+
+
+//para los p #d8eafe

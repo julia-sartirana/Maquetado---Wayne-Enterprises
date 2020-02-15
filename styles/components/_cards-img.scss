@@ -1,0 +1,91 @@
+#portfolio {
+
+  .proyects-portfolio-wrapper {
+    @include flex(center);
+    flex-wrap: wrap;
+    width: 90%;    
+
+    .proyect-portfolio {
+      width: 350px;
+      height: 250px;
+      margin: 15px;
+      border-radius: 10px;
+      overflow: hidden;
+      position: relative;
+      transition: 0.2s linear;
+
+      .info-proyect-portfolio {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        position: absolute;
+        bottom: 0px;
+        color: $bg-main;  
+        display: none;
+        background-color: rgba(4, 60, 117, 0.4);
+        transition: 0.2s linear;       
+
+        h4 {
+          @include font($font-size-l, bold, $font-secundary);
+        }
+
+        p {
+          @include font($font-size-m, normal, $font-secundary);
+        }        
+      }
+
+      &:hover {
+        cursor: pointer;
+        transition: 0.2s;
+
+        .info-proyect-portfolio {
+          display: block;
+          transition: 0.5s;
+        }
+      }
+    }
+  }
+}
+
+#team {
+
+  .card-team-wrapper {
+    @include flex(center);
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 50px 0px;  
+    position: relative;  
+
+    .card-team {
+      @include flex(center, row, center);
+      position: relative;
+      margin: 0px 20px;
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+
+      &:hover {
+        cursor: pointer;
+
+        .info-card-team {
+          display: block;
+          @include flex(center, column, center);
+          transition: 0.4s;
+        }
+      }
+
+      .info-card-team {
+        @include flex(center, column, center);
+        position: absolute;
+        bottom: 0;
+        color: #FFFFFF;
+        display: none;
+        background-color: rgba(4, 60, 117, 0.4);
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+      }
+    }
+  }
+}
+

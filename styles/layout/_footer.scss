@@ -1,0 +1,118 @@
+.footer-wrapper {  
+
+  .footer-top {
+    @include flex(space-around);
+    padding: 40px;
+    background-color: #004a99;
+    color: $bg-main;
+    font-size: 14px;      
+
+    h4 {
+      @include font($font-size-m, bold, $font-secundary);
+      letter-spacing: 0.01em;
+      margin: 30px 0px;
+    }
+   
+    .footer-description {
+      @include font($font-size-xs, normal, $font-secundary);
+      width: 330px;
+      line-height: 30px;
+      padding: 15px;
+
+      h3 {
+        @include font($font-size-xl, normal);
+      }
+    }
+
+    .footer-links {
+      width: 150px;
+
+      a {
+        color: $bg-main;
+        font-weight: normal;
+        text-decoration: none;
+      }
+
+      ul {
+        padding: 0px;
+      }
+
+      li {
+        margin: 20px 0px;
+        padding: 0px;
+        list-style: none;        
+      }
+    }
+
+    .footer-contact {
+
+      p {
+        margin: 10px 0px;
+      }
+      
+      .footer-social-links {
+        @include flex ();
+
+        .social-link {
+          width: 35px;
+          height: 35px;
+          border-radius: 50%;
+          background-color: $tertiary-color;
+          text-align: center;
+          line-height: 35px;
+          margin: 0px 3px;
+          transition: 0.3s;
+
+          &:hover {
+            cursor: pointer;
+            background-color: #0961BB;
+            transition: 0.3s;
+          }
+        }
+      }  
+    }
+
+    .footer-news {
+      width: 260px;
+      
+      p {
+        line-height: 23px;
+      }
+
+      form {
+        margin: 28px 0px;
+
+        input, button {
+          line-height: 30px;
+          border: none;
+        }
+
+        button {
+          @include font($font-size-s, normal, $font-main, $bg-main);
+          width: 90px;
+          position: absolute;
+          background-color: $tertiary-color;
+          transition: 0.3s;
+
+          &:hover {
+            cursor: pointer;
+            background-color: #0961BB;
+            transition: 0.3s;
+          }
+        }
+      }
+    }
+  }
+
+  .footer-copyright {
+    @include flex(center, column, center);
+    @include font($font-size-xs, normal, $font-main, $bg-main);
+    background-color: $secundary-color;
+    text-align: center;
+    height: 90px;   
+    
+    p {
+      margin: 0;
+    }
+  }
+}

@@ -1,0 +1,303 @@
+// --------------------------------------- 1125 px ---------------------------------------
+@media (max-width: 1125px) {
+  
+  #about {
+    .section-about {
+      width: 100%;
+      box-sizing: border-box;
+
+      .img-about-container {
+
+        img {
+        width: 100%;
+        }
+      }
+    }    
+  }  
+
+  #services {
+    .card-service-container {
+      width: 100%;
+    }
+  }  
+  
+  #why-us {
+    .card-why-us {
+      width: 30%;
+    }
+  }
+
+  #team {
+    .card-team-wrapper {
+      width: 100%;
+
+      .card-team {
+        margin: 20px;        
+
+        .info-card-team {
+          width: 100%;
+          top: 0px;          
+        }
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  #clients {
+
+    .card-clients-wrapper {
+      width: 100%;
+    }
+  }
+}
+// --------------------------------------- 993 px ---------------------------------------
+@media (max-width: 993px) {
+
+  .header-nav {
+    width: 100%;
+    background-color: rgba(19, 39, 57, 0.9);  
+    position: fixed;
+    top: 0;
+    left: 0;     
+    transform: translateX(-962px);
+    transition: 0.3s;    
+
+    .nav-items {
+      display: block;
+      background-color: rgba(19, 39, 57, 0.95);      
+      width: 260px;
+      margin: 0;
+      height: 100vh;
+
+      li {
+        color: #FFFFFF;
+      }
+    }   
+  }
+
+  .link-nav-mobile {
+    display: block;
+    text-decoration: none;
+    position: fixed;
+    top: 14px;
+    right: 20px;    
+    z-index: 999;
+    border: none;    
+
+    i {
+      font-size: 20px;
+      color: #004289;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }      
+  }
+
+  #sidebar:target {
+    transform: translateX(0);
+
+    .link-open {
+      display: none;
+    }
+
+    .link-close {
+      z-index: 9999;
+      position: absolute;
+      right: 30px;
+    }
+
+    .nav-items {
+      
+      .firts-drop {        
+        right: 215px;
+        top: 290px;
+        
+        li {
+          color: #00458F;
+        }          
+      }
+    }
+  }
+
+  #intro {
+    @include flex(center, column-reverse, center);
+
+    .intro-container {
+      width: 60%;
+      margin: 0;
+    }
+
+    .img-intro-container {
+      margin: 0;
+      width: 60%;
+      text-align: center;
+    }
+
+    .title-intro-container {
+      text-align: center;
+    }
+  }
+
+  #about {
+    
+    .section-about {
+      @include flex(center, column-reverse, center);
+    
+      .description-about, .img-about-container {
+        width: 80%;
+      }      
+    }
+
+    .second-section {
+      flex-direction: column;
+    }   
+  }
+
+  #why-us {
+
+    .card-why-us-wrapper {
+      flex-direction: column;
+      width: 100%;
+
+      .card-why-us {
+        width: 80%;
+      }
+    }
+
+    .counters-wrapper {
+      justify-content: center;
+      flex-wrap: wrap;
+
+      .counter {
+        width: calc(50% - 60px);
+      }
+    }
+  }
+
+  #contact {
+
+    .form-contact-wrapper {
+      @include flex(center, column, center);
+
+      .map-contact-container {
+        width: 95%;
+      }
+    }
+  }
+
+  .footer-wrapper {
+
+    .footer-top {
+      flex-wrap: wrap;
+
+      .footer-description,
+      .footer-links,
+      .footer-contact,
+      .footer-news {
+        width: 40%;
+      }
+       
+      .footer-description {
+        padding: 0;
+      }
+    }
+  }
+}
+// --------------------------------------- 767 px ---------------------------------------
+@media (max-width: 767px) {
+
+  #intro {
+
+    .intro-container {
+
+      .title {
+        font-size: 30px;
+        margin-top: 20px;
+        height: 170px;
+      }
+
+      .btn-intro-container {
+        width: 100%;
+      }
+    }
+  }
+
+  #services {
+
+    .card-service-container {
+      flex-direction: column;
+
+      .card-service {
+        height: 100%;
+        width: 75%;
+      }
+    }    
+  }
+
+  #team {
+    @include flex(center,column,center);
+  }
+
+  #clients {
+
+    .card-clients-wrapper {      
+
+      .card-client {
+        line-height: 260px;
+        width: 80%;
+
+        img {
+          width: 75%;
+          height: 75%;
+        }
+      }
+    }
+  }
+
+  #contact {
+
+    .form-contact-wrapper {
+
+      .form-contact-container {
+
+        .info-contact-container {
+          @include flex(center,column,flex-start);
+     
+        }
+      }
+    }
+  }
+
+  .footer-wrapper {
+    
+    .footer-top {
+      @include flex(center,column,center);
+      
+      .footer-description,
+      .footer-links,
+      .footer-contact,
+      .footer-news {
+        width: 80%;
+      }     
+
+      .footer-news {
+
+        form {
+          
+          input {
+            width: 70%;
+          }
+
+          button {
+            width: 120px;
+          }
+        }
+      }
+    }
+  }
+}
+
