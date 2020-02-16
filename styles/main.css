@@ -987,6 +987,13 @@ body {
     flex-direction: column;
     align-items: center; }
     #intro .intro-container .btn-intro-container a {
-      margin: 15px 0px; } }
+      margin: 15px 0px; }
+
+  #about .links-about .icon-about-container {
+    width: 50px;
+    height: 48px;
+    line-height: 57px; }
+    #about .links-about .icon-about-container i {
+      font-size: 25px; } }
 
 /*# sourceMappingURL=main.css.map */
