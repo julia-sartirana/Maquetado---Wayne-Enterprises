@@ -634,7 +634,7 @@ header .img-ada {
     #contact form .form-container .input-email {
       flex: 1 0 300px; }
     #contact form .form-container .input-subject, #contact form .form-container .input-msg {
-      flex: 2 0 640px; }
+      flex: 2 0 88%; }
     #contact form .form-container .input-msg {
       font-size: 13px;
       font-weight: normal;
