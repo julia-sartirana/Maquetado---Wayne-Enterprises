@@ -301,3 +301,20 @@
   }
 }
 
+// --------------------------------------- 440 px ---------------------------------------
+@media (max-width: 440px) {
+
+  #intro {
+
+    .intro-container {
+
+      .btn-intro-container {
+        @include flex(center, column, center);
+        
+        a {
+          margin: 15px 0px;
+        }
+      }
+    }
+  }
+}
