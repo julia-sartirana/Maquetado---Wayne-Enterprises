@@ -2,7 +2,7 @@
 #intro {
   @include flex();
   background-color: $main-color;
-  height: 650px;
+  height: 100vh;
   padding-top: 20px;  
 
   .img-intro-container, .intro-container{ 
@@ -69,13 +69,15 @@
 // ------------------------------------ CONTACT -------------------------------------
 #contact {
   .form-contact-wrapper {
-    @include flex(); 
-    margin: 30px 15px;    
-    width: 100%;
+    @include flex(center, row, center);
+        
+    width: 95%;
     box-sizing: border-box;    
 
     .map-contact-container {
       width: 60%;
+      margin-left: 2vh;
+      margin-bottom: 3vw;
     }
   }
 }

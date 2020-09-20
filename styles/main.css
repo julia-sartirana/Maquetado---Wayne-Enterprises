@@ -348,7 +348,7 @@
     font-weight: 500;
     font-family: "Montserrat";
     color: #283d50;
-    margin: 50px 0px 15px 0px; }
+    margin-top: 7vw; }
   .section .title-section-container p {
     font-size: 14px;
     font-weight: normal;
@@ -520,7 +520,7 @@ header .img-ada {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  width: 90%;
+  width: 91%;
   margin: 50px 0px;
   position: relative; }
   #team .card-team-wrapper .card-team {
@@ -734,7 +734,7 @@ header .img-ada {
 #intro {
   display: flex;
   background-color: #1445B3;
-  height: 650px;
+  height: 100vh;
   padding-top: 20px; }
   #intro .img-intro-container, #intro .intro-container {
     width: 50%;
@@ -792,11 +792,18 @@ header .img-ada {
 
 #contact .form-contact-wrapper {
   display: flex;
-  margin: 30px 15px;
-  width: 100%;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  width: 95%;
   box-sizing: border-box; }
   #contact .form-contact-wrapper .map-contact-container {
-    width: 60%; }
+    width: 60%;
+    margin-left: 2vh;
+    margin-bottom: 3vw; }
+
+html {
+  scroll-behavior: smooth; }
 
 body {
   margin: 0;
